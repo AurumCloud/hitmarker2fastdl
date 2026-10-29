@@ -1,0 +1,17 @@
+patch
+{
+	include "materials/hitmarker/shared_shader.vmt"
+	insert
+	{
+		$basetexture "hitmarker/hit"
+		$translucent 1
+		$basetexturetransform "center .5 .5 scale 2 2 rotate 0 translate 0 0"
+		
+		$my_type 2	// texture type: 1 = hit，2 = hit_head，3 = kill，4 = headshot
+		$frame_rate 25
+		$start_frame 0
+		$end_frame 10
+		$no_loop 1	// not allowed loop, disappear after animation finished.
+		$duration 0	// max display time, less or equal 0 = no function
+	}
+}
