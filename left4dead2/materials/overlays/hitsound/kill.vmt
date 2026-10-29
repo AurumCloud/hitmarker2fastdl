@@ -1,17 +1,8 @@
-patch
+"UnlitGeneric"
 {
-	include "materials/hitmarker/shared_shader.vmt"
-	insert
-	{
-		$basetexture "hitmarker/kill"
-		$translucent 1
-		$basetexturetransform "center .5 .5 scale 2 2 rotate 0 translate 0 0"
-		
-		$my_type 3	// texture type: 1 = hit，2 = hit_head，3 = kill，4 = headshot
-		$frame_rate 25
-		$start_frame 0
-		$end_frame 10
-		$no_loop 1	// not allowed loop, disappear after animation finished.
-		$duration 0	// max display time, less or equal 0 = no function
-	}
+	"$baseTexture" "Overlays/hitsound/kill"
+	"$REFRACTTINT" "{128 128 128}"
+	"$additive" "1"
+	//"$translucent" 1
+	
 }
